@@ -12,7 +12,6 @@ class Solution:
         return dfs(0, 0)
 
     # DFS with memoization (Top-Down DP) - O(m*n) time and space complexity
-    class Solution:
     def uniquePaths(self, m: int, n: int) -> int:
         memo = [[-1] * n for _ in range(m)]
 
@@ -30,7 +29,6 @@ class Solution:
         return dfs(0, 0)
 
     # Dynamic Programming (Tabulation) (Bottom-Up DP) - O(m*n) time and space complexity
-    class Solution:
     def uniquePaths(self, m: int, n: int) -> int:
         dp = [[0] * (n+1) for _ in range(m+1)]
         dp[m-1][n-1] = 1
